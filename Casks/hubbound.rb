@@ -3,7 +3,7 @@ cask "hubbound" do
   name "hubbound"
   desc "Hubbound CLI, daemon, user agent, and privileged helper."
   homepage "https://hubbound.net"
-  version "0.4.7"
+  version "0.4.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "hubbound" do
   on_macos do
     on_intel do
       url "https://github.com/hubbound/hubbound/releases/download/v#{version}/hubbound_darwin_amd64.tar.gz"
-      sha256 "a2da443687aaa18bbccf4ce1668868d6782da6f045d0faca0960883366fc1550"
+      sha256 "b0fa8315d83d29344b1c30349754c53f8c6da068c8f0bd7ce1981aa65e26089a"
     end
     on_arm do
       url "https://github.com/hubbound/hubbound/releases/download/v#{version}/hubbound_darwin_arm64.tar.gz"
-      sha256 "a6cd8a7a3e6b9f25e591283c375b885cf0f3618f148b7d525597253f4f38abcb"
+      sha256 "09ecc9609de00b8f59ff306f981f1e13dba4ff3fe92f6e7f1fd94a0b2145a4fa"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/hubbound/hubbound/releases/download/v#{version}/hubbound_linux_amd64.tar.gz"
-      sha256 "5656ab3d24d19f8af13e04b46c60188850caf5ff8cdb9a3e77d9ad27a2168650"
+      sha256 "1682c57c057e360cf700363f534cca55227a3c4470d5908e2584741e405d060e"
     end
     on_arm do
       url "https://github.com/hubbound/hubbound/releases/download/v#{version}/hubbound_linux_arm64.tar.gz"
-      sha256 "92411d40a0630d762d27a0d2b10b5998a9dd34eda720b795ccee7973b6710b12"
+      sha256 "7b675d5f35246f387e4c4217d101c049fb6a4ec656ebbf1687dbd4adea817325"
     end
   end
 

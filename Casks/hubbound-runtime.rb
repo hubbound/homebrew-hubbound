@@ -2,21 +2,20 @@
 # Do not replace the PKG artifact with a Caskroom binary: hubboundd must run
 # from the protected system root and must be registered by the native installer.
 cask "hubbound-runtime" do
-  arch arm: "arm64", intel: "amd64"
+  depends_on arch: :arm64
 
-  version "0.4.32"
-  sha256 arm:   "64118a2735864b5ed4ab9cc0b800e5dee123aedbfb6e7e5dd8f527a2e599ad97",
-         intel: "e4c420e1539c19a06d709ad940141b8774fedd243d151c0df34b31b0bed3970c"
+  version "0.4.34"
+  sha256 "07b36f0ccb0e32d14540590d666122c30660344cd86e2d9497999a3c8989c5e8"
 
   on_macos do
-    url "https://github.com/hubbound/hubbound/releases/download/v0.4.32/HubBound-Runtime-v#{version}-#{arch}.pkg"
+    url "https://github.com/hubbound/hubbound/releases/download/v0.4.34/HubBound-Runtime-v#{version}-arm64.pkg"
   end
 
   name "HubBound Runtime"
   desc "HubBound protected daemon, user agent, and privileged helper"
   homepage "https://hubbound.net"
 
-  pkg "HubBound-Runtime-v#{version}-#{arch}.pkg"
+  pkg "HubBound-Runtime-v#{version}-arm64.pkg"
 
   uninstall launchctl: "net.hubbound.agent",
             script: {

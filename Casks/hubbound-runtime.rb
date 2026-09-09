@@ -4,11 +4,11 @@
 cask "hubbound-runtime" do
   depends_on arch: :arm64
 
-  version "0.4.39"
-  sha256 "61bf383d6c14ba56a55f2cfc3953cc4e008b5435f1feeaef3883e5bc6a2907d6"
+  version "0.4.40"
+  sha256 "5bbd962b7ef4318788bc7efb85be82454f0787c75a36b37855667a21fae044c3"
 
   on_macos do
-    url "https://github.com/hubbound/hubbound/releases/download/v0.4.39/HubBound-Runtime-v#{version}-arm64.pkg"
+    url "https://github.com/hubbound/hubbound/releases/download/v0.4.40/HubBound-Runtime-v#{version}-arm64.pkg"
   end
 
   name "HubBound Runtime"

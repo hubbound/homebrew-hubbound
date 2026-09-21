@@ -4,18 +4,18 @@
 cask "hubbound-runtime" do
   depends_on arch: :arm64
 
-  version "0.4.49"
-  sha256 "2681278fb3a4f40573f39422729d094713ebabea67fc6b96721039675315b3cb"
+  version "0.4.50"
+  sha256 "e18752061642d08f5406c2d463cb44b5a689961a553388e06ebd5ff4021180e1"
 
   on_macos do
-    url "https://github.com/hubbound/hubbound/releases/download/v0.4.49/HubBound-Runtime-v#{version}-arm64.pkg"
+    url "https://github.com/hubbound/hubbound/releases/download/v0.4.50/HubBound-Runtime-arm64.pkg"
   end
 
   name "HubBound Runtime"
   desc "HubBound protected daemon, user agent, and privileged helper"
   homepage "https://hubbound.net"
 
-  pkg "HubBound-Runtime-v#{version}-arm64.pkg"
+  pkg "HubBound-Runtime-arm64.pkg"
 
   uninstall launchctl: "net.hubbound.agent",
             script: {

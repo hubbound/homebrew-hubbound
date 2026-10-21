@@ -3,7 +3,7 @@ cask "hubbound-cli" do
   name "hubbound-cli"
   desc "Hubbound CLI (user-owned, no background service)."
   homepage "https://hubbound.net"
-  version "0.9.0"
+  version "0.11.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,18 +14,18 @@ cask "hubbound-cli" do
   on_macos do
     on_arm do
       url "https://github.com/hubbound/hubbound/releases/download/v#{version}/hubbound-cli_darwin_arm64.tar.gz"
-      sha256 "4f7d473627b2e463a94b1328c623584688eaa66759e538c67b19511b2bacd16e"
+      sha256 "20cb6ff2f2966f92f88bd4f6c263b34ad0fef087cc5a9d44cd5c93c23bd04ebf"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/hubbound/hubbound/releases/download/v#{version}/hubbound-cli_linux_amd64.tar.gz"
-      sha256 "9505cd3762ac102805cd1edf44a0f1daa5d54a506d62b8022b01cb0f378135b7"
+      sha256 "0c951cb22bdd162f55406ab0893f6c15580e084b52610d869f0cd381d8c9d46d"
     end
     on_arm do
       url "https://github.com/hubbound/hubbound/releases/download/v#{version}/hubbound-cli_linux_arm64.tar.gz"
-      sha256 "eabaf5ad015d56ecc79f97bba227c124e9c5a3a0adfef12cdd1bb4e00aeab7fc"
+      sha256 "411878810ba5643b11616d03e8a19689031e1431449b93529e3c162ac716e126"
     end
   end
 
